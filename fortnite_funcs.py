@@ -5,7 +5,6 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import ReplyKeyboardMarkup, ParseMode, ReplyKeyboardRemove
 import logging
 from emoji import emojize
-import time
 
 fort = Fortnite('fortnite Api')
 platforms_list = [Platform.PC, Platform.XBOX, Platform.PSN, Platform.TOUCH, Platform.GAMEPAD, Platform.KBM]
