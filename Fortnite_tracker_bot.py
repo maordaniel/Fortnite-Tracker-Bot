@@ -2,7 +2,6 @@ from fortnite_funcs import *
 
 
 def start(update, context):
-    earth = emojize(':earth_africa:', use_aliases=True)
     context.bot.send_message(chat_id=update.effective_chat.id, text=f"{earth}Welcome To Fortnite Following bot{earth}")
     menu_1(update, context)
 
@@ -10,7 +9,6 @@ def start(update, context):
 def menu_1(update, context):
     custom_keyboard = [[f'Search a player {mag_right}']]
     reply_markup = ReplyKeyboardMarkup(custom_keyboard, one_time_keyboard=True, resize_keyboard=True)
-    time.sleep(1)
     user[update.message.chat_id] = {'search_state': False, "found_state": False}
     context.bot.send_photo(chat_id=update.effective_chat.id,
                            photo=open(r'/Users/maor/Desktop/Fortnit.jpg',
@@ -21,7 +19,6 @@ def menu_2(update, context):
     custom_keyboard = [[f'{sign_ic}Stats Solo{sign_ic}'], [f'{sign_ic}Stats Duo{sign_ic}'],
                        [f'{sign_ic}Stats Squad{sign_ic}'], [f'{mag_right} Search for another player {mag}']]
     reply_markup = ReplyKeyboardMarkup(custom_keyboard)
-    time.sleep(1)
     update.message.reply_text(f"*The player is Found* {vi}", reply_markup=reply_markup, parse_mode=ParseMode.MARKDOWN)
 
 
