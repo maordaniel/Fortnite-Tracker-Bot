@@ -7,10 +7,10 @@ import logging
 from emoji import emojize
 import time
 
-fort = Fortnite('62b1e718-bf9a-46c2-a5ee-e380dfac59db')
+fort = Fortnite('fortnite Api')
 platforms_list = [Platform.PC, Platform.XBOX, Platform.PSN, Platform.TOUCH, Platform.GAMEPAD, Platform.KBM]
 
-updater = Updater(token='784422654:AAGcAue85WDM2ECMl8pY5TELZ3D5Y-DL-9E', use_context=True)
+updater = Updater(token='telegram token', use_context=True)
 dispatch = updater.dispatcher
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
