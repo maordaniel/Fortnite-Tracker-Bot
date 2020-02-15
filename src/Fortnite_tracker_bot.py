@@ -11,7 +11,7 @@ def menu_1(update, context):
     reply_markup = ReplyKeyboardMarkup(custom_keyboard, one_time_keyboard=True, resize_keyboard=True)
     user[update.message.chat_id] = {'search_state': False, "found_state": False}
     context.bot.send_photo(chat_id=update.effective_chat.id,
-                           photo=open(r'/Users/maor/Desktop/Fortnit.jpg',
+                           photo=open(r'./Fortnit.jpg',
                                       'rb'), reply_markup=reply_markup)
 
 
