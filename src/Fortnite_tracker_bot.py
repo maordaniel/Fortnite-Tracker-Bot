@@ -2,7 +2,7 @@ from fortnite_funcs import *
 
 
 def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f"{earth}Welcome To Fortnite Following bot{earth}")
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"{earth}Welcome To Fortnite Bot{earth}")
     menu_1(update, context)
 
 
